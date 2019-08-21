@@ -1,0 +1,29 @@
+{
+  "name": "backend-cache",
+  "version": "1.0.0",
+  "description": "Automated intermediary for WellDone API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labs15-well-done/backend-cache.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labs15-well-done/backend-cache/issues"
+  },
+  "homepage": "https://github.com/labs15-well-done/backend-cache#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.2",
+    "nodemon": "^1.19.1",
+    "persistent-cache": "^1.1.1",
+    "sqlite3": "^4.1.0"
+  }
+}
