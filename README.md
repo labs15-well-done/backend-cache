@@ -2,7 +2,9 @@
 Automated intermediary for WellDone API
 
 First layer of a basic intermediary BE:
+
     - Endpoint for well-sensor 'status':
+    
         https://welldone-cache.herokuapp.com/p-api/{id}
 
     This endpoint will return a 14 day spread, including a 'status' for each. The status color code is as follows:
