@@ -5,7 +5,7 @@ const cors = require('cors');
 
 router.get('/:id', cors(), async (req, res) => {
     try {
-        axios.get(`https://dashboard.welldone.org/.netlify/functions/get_momo_status?id=${req.params.id}`)
+        axios.get(`https://dashboard.welldone.org/.netlify/functions/get_momo_status?id=${req.params.id}`, cors())
             .then(body => {
                 res.status(200).json(body.data)
             })
