@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const axios = require('axios');
+const cors = require('cors');
 
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', cors(), async (req, res) => {
     try {
         axios.get(`https://dashboard.welldone.org/.netlify/functions/get_momo_status?id=${req.params.id}`)
             .then(body => {
