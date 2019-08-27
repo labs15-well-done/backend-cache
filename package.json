@@ -20,11 +20,11 @@
   "homepage": "https://github.com/labs15-well-done/backend-cache#readme",
   "dependencies": {
     "axios": "^0.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "knex": "^0.19.2",
     "nodemon": "^1.19.1",
-    "persistent-cache": "^1.1.1",
     "sqlite3": "^4.1.0"
   }
 }
