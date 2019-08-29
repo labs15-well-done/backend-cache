@@ -7,14 +7,14 @@ const Sensors = require('./sensor-model.js');
 
 router.get('/:id', cors(), async (req, res) => {
     try {
-        const sensorData = axios.get(`https://dashboard.welldone.org/.netlify/functions/get_momo_status?id=${req.params.id}`, cors())
-            .then(body => {
-                res.status(200).json(body.data)
+        const sensorData = await axios.get(`https://dashboard.welldone.org/.netlify/functions/get_momo_status?id=${req.params.id}`, cors())
+            //.then(body => {
+                res.status(200).json(sensorData.data.status)
                 
-            })
-            .catch(err => {
-                res.status(500).json({message: err})
-            })
+            //})
+            //.catch(err => {
+            //    res.status(500).json({message: err})
+            //})
     }
     catch (error) {
         res.status(500).json({message: "Unable to access ID", err})
